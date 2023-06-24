@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        beba: ['Beba Neue', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-        dosis: ['Dosis', 'sans-serif'],
+        beba: 'var(--font-beba)',
+        roboto: 'var(--font-roboto)',
+        dosis: 'var(--font-dosis)',
+        kanit: 'var(--font-kanit)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

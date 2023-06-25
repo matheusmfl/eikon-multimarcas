@@ -1,5 +1,6 @@
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
+import { SectionRed } from '@/components/SectionRed'
 import { Section1 } from '@/components/section1'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Section1 />
+      <SectionRed />
     </main>
   )
 }

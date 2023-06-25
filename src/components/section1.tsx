@@ -76,7 +76,11 @@ export function Section1() {
           Quer falar com atendente?
         </span>
         <div className="flex items-center justify-center">
-          <Image src={arrow} alt="setinha para baixo" />
+          <Image
+            src={arrow}
+            alt="setinha para baixo"
+            className="animate-pulse"
+          />
         </div>
       </section>
       {/* CTA botão */}

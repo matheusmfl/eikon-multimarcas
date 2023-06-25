@@ -25,8 +25,10 @@ export function Section2() {
       </div>
 
       {/* Container Buttons */}
-      <div>
+      <div className="flex flex-col gap-4">
         <RedButton title="Camiseta" sub="gola polo" />
+        <RedButton title="T-shirt" />
+        <RedButton title="Medidas em" sub="peso e altura" />
       </div>
     </section>
   )

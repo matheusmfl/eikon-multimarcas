@@ -30,6 +30,12 @@ export function Section2() {
         <RedButton title="T-shirt" />
         <RedButton title="Medidas em" sub="peso e altura" />
       </div>
+      {/* Final sessão texto */}
+      <div className="px-7">
+        <span className="text-3xl font-kanit font-medium text-center inline-block pt-2 text-black">
+          Click nas opções acima para ver as medidas
+        </span>
+      </div>
     </section>
   )
 }

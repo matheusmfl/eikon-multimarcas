@@ -6,7 +6,7 @@ import marcas from '../assets/hero-marcas.png'
 export function Hero() {
   return (
     <>
-      <section className="flex py-10 px-5 flex-col gap-8 bg-slate-50 items-center">
+      <section className="flex py-10 bg-plastic px-5 flex-col gap-8 items-center">
         {/* div texto */}
         <div>
           <Image src={heroText} alt="Texto: Direto da fábrica" />

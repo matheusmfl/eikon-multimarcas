@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import hero from '../assets/hero-img.png'
+// import hero from '../assets/hero-img.png'
 import heroText from '../assets/hero-text.svg'
 import marcas from '../assets/hero-marcas.png'
+import { SwiperComponent } from './microComponents/SwiperComponent'
 
 export function Hero() {
   return (
@@ -13,8 +14,8 @@ export function Hero() {
         </div>
 
         {/* container com imagem */}
-        <div className="">
-          <Image src={hero} alt="Imagem rotativa" />
+        <div className="w-[300px] h-[380px]">
+          <SwiperComponent />
         </div>
 
         {/* Div texto novamente */}

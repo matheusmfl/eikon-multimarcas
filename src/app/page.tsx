@@ -1,3 +1,4 @@
+import { FeedbackSection } from '@/components/FeedbackSection'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
@@ -14,6 +15,7 @@ export default function Home() {
       <Section1 />
       <SectionRed />
       <Section2 />
+      <FeedbackSection />
       <SectionSelo />
       <Footer />
     </main>

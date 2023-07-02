@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active .custom-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  transform: scale(1.5);
+}

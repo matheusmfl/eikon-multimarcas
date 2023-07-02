@@ -1,0 +1,15 @@
+.swiper-slide-active{
+margin-left: 5%;
+}
+
+.swiper-slide-prev{
+margin-left: 5%;
+background-color: white;
+border-radius: 24px;
+}
+
+.swiper-slide-next{
+margin-left: -12%;
+background-color: white;
+border-radius: 24px;
+}

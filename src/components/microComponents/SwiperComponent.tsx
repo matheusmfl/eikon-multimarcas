@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import '../../style/carrossel.css'
 
 import Image from 'next/image'
 import hero from '../../assets/hero-img.png'
@@ -13,7 +14,7 @@ SwiperCore.use([Pagination])
 
 export function SwiperComponent() {
   return (
-    <div className="swiper-container">
+    <div className="slider-container">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -22,31 +23,20 @@ export function SwiperComponent() {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <div className="w-[300px] h-[380px] rounded-lg">
+          <div className="w-[300px] h-[380px] rounded-lg slide-content">
             <Image src={hero} alt="Imagem rotativa" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[300px] h-[380px] rounded-lg">
+          <div className="w-[300px] h-[380px] rounded-lg slide-content">
             <Image src={hero1} alt="Imagem rotativa" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[300px] h-[380px] rounded-lg">
+          <div className="w-[300px] h-[380px] rounded-lg slide-content">
             <Image src={hero2} alt="Imagem rotativa" />
           </div>
         </SwiperSlide>
-        <div className="swiper-pagination">
-          <div className="swiper-pagination-bullets">
-            <span
-              className="custom-bullet"
-              style={{ backgroundColor: 'white' }}
-            ></span>
-            <span className="custom-bullet"></span>
-            <span className="custom-bullet"></span>
-            {/* ... */}
-          </div>
-        </div>
       </Swiper>
     </div>
   )

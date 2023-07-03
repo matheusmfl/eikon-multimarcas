@@ -1,0 +1,30 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-pagination-bullet{
+  background-color: white;
+  width: 16px;
+  height: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet:hover{
+  width: 24px;
+  height: 24px;
+  
+}
+
+.swiper-pagination-bullets{
+  transform: translateY(-20px);
+}

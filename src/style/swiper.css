@@ -28,6 +28,10 @@ background-color: white;
 border-radius: 24px;
 }
 
+.swiper-slide-prev + .swiper-slide-active {
+  transform: translateX(-10px);
+}
+
 /* .swiper-slide-next{
 margin-right: 36px;
 background-color: white;

@@ -10,24 +10,30 @@ SwiperCore.use([Pagination])
 
 export function SwiperFeedback() {
   return (
-    <div className="swiper-container">
+    <div className="slider-container">
       <Swiper
-        spaceBetween={-10}
-        initialSlide={1}
-        slidesPerView={1}
+        spaceBetween={0}
         centeredSlides={true}
+        initialSlide={0}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <FeedbackBalloon />
+          <div className="slide-content">
+            <FeedbackBalloon />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <FeedbackBalloon />
+          <div className="slide-content">
+            <FeedbackBalloon />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <FeedbackBalloon />
+          <div className="slide-content">
+            <FeedbackBalloon />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

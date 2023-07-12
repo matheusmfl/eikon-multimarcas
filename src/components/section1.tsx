@@ -11,7 +11,7 @@ export function Section1() {
     <>
       {/* Cta botão */}
 
-      <div className="-translate-y-6 flex align-center justify-center hover:brightness-75 hover:cursor-pointer">
+      <div className="-translate-y-6 flex align-center md:hidden justify-center hover:brightness-75 hover:cursor-pointer">
         <CtaButton title="SOLICITAR CATALOGO" />
       </div>
       <section className="py-6 px-3 flex flex-col gap-5">

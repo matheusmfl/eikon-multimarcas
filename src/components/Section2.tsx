@@ -1,13 +1,13 @@
 'use client'
 import * as AlertDialog from '@radix-ui/react-alert-dialog'
 import Image from 'next/image'
-import card01 from '../assets/CARD01.png'
+import card01 from '../assets/CARD01.webp'
 
 export function Section2() {
   return (
     <section className="pb-8 flex flex-col gap-3 px-6 bg-slate-50">
       {/* Container contendo imagem */}
-      <div className="-translate-y-24">
+      <div className="-translate-y-12">
         <Image src={card01} alt="Imagem de mulher usando conjunto de roupa" />
       </div>
 

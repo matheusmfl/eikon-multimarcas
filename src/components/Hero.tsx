@@ -1,7 +1,7 @@
 import Image from 'next/image'
 // import hero from '../assets/hero-img.png'
 import heroText from '../assets/hero-text.svg'
-import marcas from '../assets/hero-marcas.png'
+import marcas from '../assets/hero-marcas.webp'
 import { SwiperComponent } from './microComponents/SwiperComponent'
 
 export function Hero() {
@@ -29,16 +29,16 @@ export function Hero() {
             <br /> grandes marcas
           </h2>
         </div>
+        {/* div de imagens com marcas */}
+        <div className="w-full">
+          <Image
+            src={marcas}
+            alt="Marcas à quais trabalhamos"
+            width={600}
+            height={600}
+          />
+        </div>
       </section>
-      {/* div de imagens com marcas */}
-      <div className="w-full bg-slate-50">
-        <Image
-          src={marcas}
-          alt="Marcas à quais trabalhamos"
-          width={600}
-          height={600}
-        />
-      </div>
     </>
   )
 }

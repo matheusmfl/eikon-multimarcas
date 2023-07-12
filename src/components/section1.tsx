@@ -14,10 +14,10 @@ export function Section1() {
       <div className="-translate-y-6 flex align-center md:hidden justify-center hover:brightness-75 hover:cursor-pointer">
         <CtaButton title="SOLICITAR CATALOGO" />
       </div>
-      <section className="py-6 px-3 md:py-10 md:px-10 md:pb-0 flex flex-col gap-5">
+      <section className="py-6 px-3 md:py-10 md:px-10 md:pb-0 xl:gap-10 flex flex-col gap-5">
         {/* div cards */}
         <div className="grid grid-cols-2 gap-[8px] md:flex md:justify-between">
-          <div className="bg-slate-50 md:w-[180px] rounded-xl py-[10px] flex flex-col items-center justify-center gap-3">
+          <div className="bg-slate-50 md:w-[180px] xl:w-[264px] rounded-xl py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconSeguranca} alt="Icone" />
             <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
               compra
@@ -28,7 +28,7 @@ export function Section1() {
 
           {/* Card 2 */}
 
-          <div className="bg-slate-50 rounded-xl md:w-[180px] py-[10px] flex flex-col items-center justify-center gap-3">
+          <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconQualidade} alt="Icone" />
             <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
               qualidade
@@ -39,7 +39,7 @@ export function Section1() {
 
           {/* Card 3 */}
 
-          <div className="bg-slate-50 rounded-xl md:w-[180px] py-[10px] flex flex-col items-center justify-center gap-3">
+          <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconPackage} alt="Icone" />
             <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
               envio
@@ -50,7 +50,7 @@ export function Section1() {
 
           {/* card 4 */}
 
-          <div className="bg-slate-50 rounded-xl md:w-[180px] py-[10px] flex flex-col items-center justify-center gap-3">
+          <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconLucro} alt="Icone" />
             <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
               lucre até

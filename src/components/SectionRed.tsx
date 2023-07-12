@@ -1,8 +1,8 @@
 export function SectionRed() {
   return (
-    <section className="bg-[#DA1E35] px-6 py-14 flex flex-col gap-6">
+    <section className="bg-[#DA1E35] px-6 py-14 flex flex-col xl:px-32 gap-6">
       {/* Separator */}
-      <div className="h-1 w-full bg-white" />
+      <div className="h-1 w-full bg-white md:hidden" />
 
       {/* TextContainer */}
       <div className="w-full">

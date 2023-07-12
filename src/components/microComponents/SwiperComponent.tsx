@@ -14,7 +14,7 @@ SwiperCore.use([Pagination])
 
 export function SwiperComponent() {
   return (
-    <div className="slider-container">
+    <div className="slider-container xl:translate-x-14">
       <Swiper
         id="first"
         spaceBetween={50}
@@ -32,8 +32,8 @@ export function SwiperComponent() {
             src={hero}
             alt="Imagem rotativa"
             className="rounded-2xl"
-            width={400}
-            height={400}
+            width={540}
+            height={540}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -41,17 +41,17 @@ export function SwiperComponent() {
             src={hero1}
             alt="Imagem rotativa"
             className="rounded-2xl"
-            width={400}
-            height={400}
+            width={540}
+            height={540}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={hero2}
             alt="Imagem rotativa"
-            className="rounded-2xl object-contain -ml-4"
-            width={400}
-            height={400}
+            className="rounded-2xl object-contain -ml-4 xl:ml-0"
+            width={540}
+            height={540}
           />
         </SwiperSlide>
       </Swiper>

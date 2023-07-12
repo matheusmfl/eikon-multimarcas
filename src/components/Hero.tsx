@@ -27,7 +27,7 @@ export function Hero() {
                 className="border-b-[10px] border-red-600"
               />
             </div>
-            <div className="hidden md:block h-full xl:block">
+            <div className="hidden md:hidden h-full xl:block">
               <Image src={heroTextXl} alt="Texto: Direto da fábrica" />
             </div>
 
@@ -38,7 +38,7 @@ export function Hero() {
           </div>
 
           {/* Container Para responsabilidade */}
-          <div>
+          <div className="md:py-8">
             {/* Div texto novamente */}
 
             <div className="flex flex-col md:flex-row gap-20 xl:gap-8 xl:flex-col">

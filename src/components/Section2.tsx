@@ -2,35 +2,58 @@
 import * as AlertDialog from '@radix-ui/react-alert-dialog'
 import Image from 'next/image'
 import card01 from '../assets/CARD01.webp'
+import card02 from '../assets/CARD02.webp'
+import card03 from '../assets/CARD03.webp'
+import { CtaButton } from './CtaButton'
 
 export function Section2() {
   return (
-    <section className="pb-8 flex flex-col gap-3 px-6 bg-slate-50">
+    <section className="pb-8 flex flex-col gap-3 px-6 md:py-6 md:gap-6 bg-slate-50">
+      {/* Container CTA so existe no MD */}
+      <div className="hidden w-full md:flex md:items-start md:justify-center hover:brightness-75 hover:cursor-pointer">
+        <CtaButton title="SOLICITAR CATALOGO" />
+      </div>
       {/* Container contendo imagem */}
-      <div className="-translate-y-12">
-        <Image src={card01} alt="Imagem de mulher usando conjunto de roupa" />
+      <div className="-translate-y-12 md:translate-y-0 md:flex md:w-full">
+        <div>
+          <Image src={card01} alt="Imagem de mulher usando conjunto de roupa" />
+        </div>
+        <div className="hidden md:block">
+          <Image src={card02} alt="Imagem de mulher usando conjunto de roupa" />
+        </div>
+        <div className="hidden md:block">
+          <Image src={card03} alt="Imagem de mulher usando conjunto de roupa" />
+        </div>
       </div>
 
       {/* Container Tamanhos .. */}
       <div className="flex flex-col items-center justify-center">
         {/* Container red */}
-        <div className="bg-[#DA1E35] px-8">
-          <span className="text-4xl font-kanit font-bold text-center inline-block">
-            Tamanhos
+        <div>
+          <div className="bg-[#DA1E35] px-8 md:w-[440px] md:flex md:items-center">
+            <span className="text-4xl font-kanit font-bold text-center inline-block ">
+              Tamanhos{' '}
+            </span>
+            <span className="hidden md:block text-4xl font-kanit font-bold text-center pl-2">
+              disponíveis
+            </span>
+          </div>
+          <span className="hidden md:block px-11 text-black font-kanit text-4xl text-center font-bold">
+            P-M-G e GG
           </span>
         </div>
         {/* P-M-G e GG */}
-        <span className="px-11 text-black font-kanit text-2xl font-medium">
+        <span className="px-11 md:hidden text-black font-kanit text-2xl font-medium">
           P-M-G e GG
         </span>
       </div>
 
       {/* Container Buttons */}
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <AlertDialog.Root>
           <AlertDialog.Trigger asChild>
-            <button className="bg-[#DA1E35] leading-7 h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
+            <button className="bg-[#DA1E35] leading-7 md:h-[112px] h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
               Camisetas <br />
               Gola Polo
             </button>
@@ -60,7 +83,7 @@ export function Section2() {
 
         <AlertDialog.Root>
           <AlertDialog.Trigger asChild>
-            <button className="bg-[#DA1E35] leading-7 h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
+            <button className="bg-[#DA1E35] md:h-[112px] leading-7 h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
               T-Shirts <br />
             </button>
           </AlertDialog.Trigger>
@@ -88,7 +111,7 @@ export function Section2() {
         </AlertDialog.Root>
         <AlertDialog.Root>
           <AlertDialog.Trigger asChild>
-            <button className="bg-[#DA1E35] leading-7 h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
+            <button className="bg-[#DA1E35] leading-7 md:h-[112px] h-20 py-2 px-8 font-kanit font-semibold text-3xl text-center w-full rounded-3xl">
               Medidas em <br />
               Peso e altura
             </button>
@@ -118,9 +141,10 @@ export function Section2() {
       </div>
 
       {/* Final sessão texto */}
-      <div className="px-7">
-        <span className="text-3xl font-kanit font-medium text-center inline-block pt-2 text-black">
-          Click nas opções acima para ver as medidas
+      <div className="px-7 md:flex md:items-center md:justify-center">
+        <span className="text-3xl font-kanit font-medium text-center inline-block pt-2 text-black md:border-b-4 md:border-red-500">
+          <span className="animate-pulse">☝️</span> Click nas opções acima para
+          ver as medidas
         </span>
       </div>
     </section>

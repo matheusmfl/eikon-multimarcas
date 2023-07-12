@@ -7,8 +7,10 @@ interface Iprops {
 
 export function CtaButton({ title }: Iprops) {
   return (
-    <div className="w-[350px] py-2 flex items-center justify-center gap-3 bg-[#50B924] rounded-[40px]">
-      <span className="text-center font-beba text-[26px]">{title}</span>
+    <div className="w-[350px] xl:w-[502px] py-2 flex items-center justify-center gap-3 bg-[#50B924] rounded-[40px]">
+      <span className="text-center font-beba text-[26px] xl:text-[32px]">
+        {title}
+      </span>
       <Image src={wpp} alt="Link para whatsapp" />
     </div>
   )

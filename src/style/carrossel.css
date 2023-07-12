@@ -1,10 +1,10 @@
-.slider-container {
+#first .slider-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.slide-content {
+#first .slide-content {
   display: flex;
   justify-content: center;
   align-items: center;

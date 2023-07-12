@@ -18,9 +18,31 @@ export function SwiperFeedback() {
         slidesPerView={1}
         autoplay={true}
         loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            initialSlide: 1,
+          },
+        }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
+        <SwiperSlide>
+          <div className="slide-content overflow-y-visible">
+            <FeedbackBalloon />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-content overflow-y-visible">
+            <FeedbackBalloon />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-content overflow-y-visible">
+            <FeedbackBalloon />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content overflow-y-visible">
             <FeedbackBalloon />

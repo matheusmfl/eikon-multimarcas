@@ -5,7 +5,7 @@ import star from '../../assets/star.svg'
 export function FeedbackBalloon() {
   return (
     <div className="pb-3">
-      <div className="w-[320px] h-[280px] pb-6 font-roboto font-medium shadow-md shadow-black/20 text-black relative flex bg-white px-6 flex-col justify-between items-center rounded-3xl">
+      <div className="w-[320px] h-[280px] md:scale-75 pb-6 font-roboto font-medium shadow-md shadow-black/20 text-black relative flex bg-white px-6 flex-col justify-between items-center rounded-3xl">
         <Image src={aspas} alt="Alterantive text" />
 
         {/* Div com texto */}

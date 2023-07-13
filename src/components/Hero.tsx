@@ -41,8 +41,8 @@ export function Hero() {
           <div className="md:py-8">
             {/* Div texto novamente */}
 
-            <div className="flex flex-col md:flex-row gap-20 xl:gap-8 xl:flex-col">
-              <h2 className="text-3xl font-dosis font-medium tracking-[1.56px] leading-8 text-center xl:text-left text-black">
+            <div className="flex flex-col md:flex-row gap-20 xl:gap-8 xl:flex-col pt-4">
+              <h2 className="text-3xl font-kanit font-medium tracking-[1.56px] leading-8 text-center xl:text-left text-black">
                 compre a <br className="xl:hidden " />
                 <span className="text-red-600 font-bold">
                   preço de custo <br />

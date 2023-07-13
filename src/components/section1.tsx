@@ -19,7 +19,7 @@ export function Section1() {
         <div className="grid grid-cols-2 gap-[8px] md:flex md:justify-between">
           <div className="bg-slate-50 md:w-[180px] xl:w-[264px] rounded-xl py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconSeguranca} alt="Icone" />
-            <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
+            <h3 className="font-kanit text-2xl text-black uppercase font-bold text-center leading-6">
               compra
               <br />
               <span className="text-[#50B924]">segura</span>
@@ -30,7 +30,7 @@ export function Section1() {
 
           <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconQualidade} alt="Icone" />
-            <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
+            <h3 className="font-kanit text-2xl text-black uppercase font-bold text-center leading-6">
               qualidade
               <br />
               <span className="text-yellow-400">premium</span>
@@ -41,7 +41,7 @@ export function Section1() {
 
           <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconPackage} alt="Icone" />
-            <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
+            <h3 className="font-kanit text-2xl text-black uppercase font-bold text-center leading-6">
               envio
               <br />
               <span className="text-cyan-600">imediato</span>
@@ -52,7 +52,7 @@ export function Section1() {
 
           <div className="bg-slate-50 rounded-xl md:w-[180px] xl:w-[264px] py-[10px] flex flex-col items-center justify-center gap-3">
             <Image src={iconLucro} alt="Icone" />
-            <h3 className="font-dosis text-2xl text-black uppercase font-bold text-center leading-6">
+            <h3 className="font-kanit text-2xl text-black uppercase font-bold text-center leading-6">
               lucre até
               <br />
               <span className="text-pink-600">300%</span>
@@ -72,7 +72,7 @@ export function Section1() {
           </span>
         </div>
         {/* Texto CTA */}
-        <span className="text-white text-base text-center">
+        <span className="text-white text-base text-center xl:hidden">
           Quer falar com atendente?
         </span>
         <div className="flex items-center justify-center">

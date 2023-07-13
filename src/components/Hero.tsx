@@ -49,9 +49,14 @@ export function Hero() {
             </motion.div>
 
             {/* container com imagem */}
-            <div className="w-[300px] h-[380px] xl:hidden">
+            <motion.div
+              className="w-[300px] h-[380px] xl:hidden"
+              initial={{ x: 0, y: 20, opacity: 0 }}
+              whileInView={{ x: 0, y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
               <SwiperComponent />
-            </div>
+            </motion.div>
           </div>
 
           {/* Container Para responsabilidade */}

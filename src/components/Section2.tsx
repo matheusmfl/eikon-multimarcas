@@ -4,6 +4,7 @@ import Image from 'next/image'
 import card01 from '../assets/CARD01.webp'
 import card02 from '../assets/CARD02.webp'
 import card03 from '../assets/CARD03.webp'
+import { motion } from 'framer-motion'
 import { CtaButton } from './CtaButton'
 
 export function Section2() {
@@ -15,15 +16,50 @@ export function Section2() {
       </div>
       {/* Container contendo imagem */}
       <div className="-translate-y-12 md:translate-y-0 md:flex md:w-full">
-        <div>
+        <motion.div
+          initial={{
+            x: 100,
+          }}
+          whileInView={{
+            x: 0,
+          }}
+          transition={{
+            duration: 2,
+            type: 'spring',
+          }}
+        >
           <Image src={card01} alt="Imagem de mulher usando conjunto de roupa" />
-        </div>
-        <div className="hidden md:block">
+        </motion.div>
+        <motion.div
+          className="hidden md:block"
+          initial={{
+            x: 100,
+          }}
+          whileInView={{
+            x: 0,
+          }}
+          transition={{
+            duration: 2,
+            type: 'spring',
+          }}
+        >
           <Image src={card02} alt="Imagem de mulher usando conjunto de roupa" />
-        </div>
-        <div className="hidden md:block">
+        </motion.div>
+        <motion.div
+          className="hidden md:block"
+          initial={{
+            x: 100,
+          }}
+          whileInView={{
+            x: 0,
+          }}
+          transition={{
+            duration: 2,
+            type: 'spring',
+          }}
+        >
           <Image src={card03} alt="Imagem de mulher usando conjunto de roupa" />
-        </div>
+        </motion.div>
       </div>
 
       {/* Container Tamanhos .. */}

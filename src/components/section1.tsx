@@ -16,7 +16,7 @@ export function Section1() {
       <div className="-translate-y-6 flex align-center md:hidden justify-center hover:brightness-75 hover:cursor-pointer">
         <CtaButton title="SOLICITAR CATALOGO" />
       </div>
-      <section className="py-6 px-3 md:py-10 md:px-10 md:pb-0 xl:gap-10 flex flex-col gap-5">
+      <section className="py-6 px-3 md:py-10 md:px-10 md:pb-0 xl:gap-10 flex bg-black flex-col gap-5">
         {/* div cards */}
         <motion.div
           className="grid grid-cols-2 gap-[8px] md:flex md:justify-between"
